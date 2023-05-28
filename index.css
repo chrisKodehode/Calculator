@@ -253,6 +253,8 @@
 
 /* Operator Buttons */
 #operator-addition{
+    background-color: rgb(190, 190, 190); 
+
     position: absolute;
     width: 70px;
     height: 40px;
@@ -270,6 +272,8 @@
 }
 
 #operator-minus{
+    background-color: rgb(190, 190, 190);
+
     font-weight: bold;
 
     position: absolute;
@@ -289,6 +293,8 @@
 }
 
 #operator-multiplication{
+    background-color: rgb(190, 190, 190);
+
     position: absolute;
     width: 70px;
     height: 40px;
@@ -306,6 +312,8 @@
 }
 
 #operator-division{
+    background-color: rgb(190, 190, 190);
+    
     font-weight: bold;
 
     position: absolute;
