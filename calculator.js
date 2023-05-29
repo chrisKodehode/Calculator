@@ -24,9 +24,19 @@ numberZero.addEventListener("click", function(event) {
     if (event === 0) {
         console.log("Zero here")
     } else {
-        event.textContent = 0;
+        event.textContent += 0;
     }
 
     divDisplay = event;
-    console.log(divDisplay)
+})
+
+numberOne.addEventListener("click", function(event) {
+    event = divDisplay
+    if (event === 0) {
+        console.log("Zero here")
+    } else {
+        event.textContent += 1;
+    }
+
+    divDisplay = event;
 })
