@@ -24,7 +24,7 @@ const addition       = document.getElementById("operator-addition")
 const subtraction    = document.getElementById("operator-subtraction")
 const multiplication = document.getElementById("operator-multiplication")
 const division       = document.getElementById("operator-division")
- 
+
 numberZero.addEventListener("click", function(event) {
     event = divDisplay
     if (event === "0") {
