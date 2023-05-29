@@ -4,7 +4,7 @@
 */
 
 // Declare and assign the html buttons & display to a variable
-const divDisplay  =  document.getElementById("display");
+let divDisplay    =  document.getElementById("display");
 const numberZero  =  document.getElementById("number-0");
 const numberDot   =  document.getElementById("number-dot");
 const letterC     =  document.getElementById("letter-C");
@@ -19,4 +19,14 @@ const numberSeven =  document.getElementById("number-7");
 const numberEight =  document.getElementById("number-8");
 const numberNine  =  document.getElementById("number-9");
 
-// Conditional if a button is entered, display it to the screen
+numberZero.addEventListener("click", function(event) {
+    event = divDisplay
+    if (event === 0) {
+        console.log("Zero here")
+    } else {
+        event.textContent = 0;
+    }
+
+    divDisplay = event;
+    console.log(divDisplay)
+})
