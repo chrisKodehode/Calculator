@@ -126,7 +126,7 @@ division.addEventListener("click", function(event) {
 
 // Declare and assign keycodes to corresponding actions
 let keyCodeMap = {
-    // "48" to "57" maps to the numbers "0" to "9",
+    // Normal keyboard numbers | "48" to "57" maps to the numbers "0" to "9"
     48: "0",
     49: "1",
     50: "2",
@@ -138,7 +138,7 @@ let keyCodeMap = {
     56: "8",
     57: "9",
 
-    // "96" to "105" maps to the numbers "0" to "9",
+    // Numpad Numbers | "96" to "105" maps to the numbers "0" to "9"
     96: "0",
     97: "1",
     98: "2",
@@ -150,6 +150,7 @@ let keyCodeMap = {
     104: "8",
     105: "9",
     
+    // Numpad
     // "106" maps to "*",
     106: "*",
     // "107" maps to "+"
