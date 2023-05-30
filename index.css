@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+/* Main Text */
+.text-heading{
+    text-align: center;
+    margin-top: 250px;
+}
+
 /* Calculator Body */
 #container{
     width: 345px;
