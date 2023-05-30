@@ -44,6 +44,21 @@ displayClear.addEventListener("click", function(event) {
     calculationArray = [];
 })
 
+// Calculating when = is pressed or clicked
+signEquals.addEventListener("click", function(event) {
+    // Join the array into a string
+    let calculationString = calculationArray.join('');
+
+    // Use eval() to calculate it
+    let result = eval(calculationString);
+
+    // Display the result
+    divDisplay.textContent = result;
+
+    // Clear the calculationArray for the next calculation
+    calculationArray = [];
+})
+
 numberOne.addEventListener("click", function(event) {
     divDisplay.textContent += "1";
     calculationArray.push("1");
@@ -107,19 +122,4 @@ multiplication.addEventListener("click", function(event) {
 division.addEventListener("click", function(event) {
     divDisplay.textContent += "/";
     calculationArray.push("/");
-})
-
-// Calculating when = is pressed or clicked
-signEquals.addEventListener("click", function(event) {
-    // Join the array into a string
-    let calculationString = calculationArray.join('');
-
-    // Use eval() to calculate it
-    let result = eval(calculationString);
-
-    // Display the result
-    divDisplay.textContent = result;
-
-    // Clear the calculationArray for the next calculation
-    calculationArray = [];
 })
