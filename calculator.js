@@ -28,9 +28,7 @@ const division       = document.getElementById("operator-division")
 
 numberZero.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "0") {
-        console.log("0 here")
-    } else {
+    if (event !== "0") {
         event.textContent += 0;
     }
 
@@ -39,9 +37,7 @@ numberZero.addEventListener("click", function(event) {
 
 numberDot.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === ".") {
-        console.log(". here")
-    } else {
+    if (event !== ".") {
         event.textContent += ".";
     }
 
@@ -59,9 +55,7 @@ displayClear.addEventListener("click", function(event) {
 
 numberOne.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "1") {
-        console.log("1 here")
-    } else {
+    if (event !== "1") {
         event.textContent += 1;
     }
 
@@ -70,9 +64,7 @@ numberOne.addEventListener("click", function(event) {
 
 numberTwo.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "2") {
-        console.log("2 here")
-    } else {
+    if (event !== "2") {
         event.textContent += 2;
     }
 
@@ -81,9 +73,7 @@ numberTwo.addEventListener("click", function(event) {
 
 numberThree.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "3") {
-        console.log("3 here")
-    } else {
+    if (event !== "3") {
         event.textContent += 3;
     }
 
@@ -92,9 +82,7 @@ numberThree.addEventListener("click", function(event) {
 
 numberFour.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "4") {
-        console.log("4 here")
-    } else {
+    if (event !== "4") {
         event.textContent += 4;
     }
 
@@ -103,9 +91,7 @@ numberFour.addEventListener("click", function(event) {
 
 numberFive.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "5") {
-        console.log("5 here")
-    } else {
+    if (event !== "5") {
         event.textContent += 5;
     }
 
@@ -114,9 +100,7 @@ numberFive.addEventListener("click", function(event) {
 
 numberSix.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "6") {
-        console.log("6 here")
-    } else {
+    if (event !== "6") {
         event.textContent += 6;
     }
 
@@ -125,9 +109,7 @@ numberSix.addEventListener("click", function(event) {
 
 numberSeven.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "7") {
-        console.log("7 here")
-    } else {
+    if (event !== "7") {
         event.textContent += 7;
     }
 
@@ -136,9 +118,7 @@ numberSeven.addEventListener("click", function(event) {
 
 numberEight.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "8") {
-        console.log("8 here")
-    } else {
+    if (event !== "8") {
         event.textContent += 8;
     }
 
@@ -147,9 +127,7 @@ numberEight.addEventListener("click", function(event) {
 
 numberNine.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "9") {
-        console.log("9 here")
-    } else {
+    if (event !== "9") {
         event.textContent += 9;
     }
 
@@ -158,9 +136,7 @@ numberNine.addEventListener("click", function(event) {
 
 addition.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "+") {
-        console.log("+ here")
-    } else {
+    if (event !== "+") {
         event.textContent += "+";
     }
 
@@ -169,9 +145,7 @@ addition.addEventListener("click", function(event) {
 
 subtraction.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "-") {
-        console.log("- here")
-    } else {
+    if (event !== "-") {
         event.textContent += "-";
     }
 
@@ -180,9 +154,7 @@ subtraction.addEventListener("click", function(event) {
 
 multiplication.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "*") {
-        console.log("* here")
-    } else {
+    if (event !== "*") {
         event.textContent += "*";
     }
 
@@ -191,9 +163,7 @@ multiplication.addEventListener("click", function(event) {
 
 division.addEventListener("click", function(event) {
     event = divDisplay
-    if (event === "/") {
-        console.log("/ here")
-    } else {
+    if (event !== "/") {
         event.textContent += "/";
     }
 
