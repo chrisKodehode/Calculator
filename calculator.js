@@ -57,13 +57,6 @@ displayClear.addEventListener("click", function(event) {
     divDisplay = event;
 })
 
-// Calculate the given number & operator and display sum to the display box
-signEquals.addEventListener("click", function(event) {
-    event = divDisplay
-
-    divDisplay = event;
-})
-
 numberOne.addEventListener("click", function(event) {
     event = divDisplay
     if (event === "1") {
@@ -206,3 +199,14 @@ division.addEventListener("click", function(event) {
 
     divDisplay = event;
 })
+
+// - Create an empty list called 'calculation'
+const calculation = [];
+// - When a button is clicked, check if it's a number or operator:
+
+//   - If it is, add the button value to the 'calculation' list
+//   - If the button is 'equals', then:
+//     - Combine all items in 'calculation' into a single string
+//     - Use a calculation function to get the result of this string
+//     - Show this result on the display box
+//     - Empty the 'calculation' list for future operations
