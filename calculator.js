@@ -29,6 +29,7 @@ const division       = document.getElementById("operator-division")
 // Create an empty array to store numbers and operators for calculations
 let calculationArray = [];
 
+// Create multiple click event listeners for numbers and operators
 numberZero.addEventListener("click", function(event) {
     divDisplay.textContent += "0";
     calculationArray.push("0");
@@ -107,4 +108,19 @@ multiplication.addEventListener("click", function(event) {
 division.addEventListener("click", function(event) {
     divDisplay.textContent += "/";
     calculationArray.push("/");
+})
+
+// Calculating when = is pressed or clicked
+signEquals.addEventListener("click", function(event) {
+    // Join the array into a string
+    let calculationString = calculationArray.join('');
+
+    // Use eval() to calculate it
+    let result = eval(calculationString);
+
+    // Display the result
+    divDisplay.textContent = result;
+
+    // Clear the calculationArray for the next calculation
+    calculationArray = [];
 })
