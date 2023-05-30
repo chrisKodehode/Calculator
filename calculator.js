@@ -1,6 +1,5 @@
 /*
     TODO:
-    * Calculation for all operators and sum it then display sum to display box
     * Keydown event for all numbers and operators for easier input 
     ! 27-28 max characters in display box
     ! 1 max character in display box for decimal, equals & operators
