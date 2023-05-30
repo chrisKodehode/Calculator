@@ -26,146 +26,85 @@ const subtraction    = document.getElementById("operator-subtraction")
 const multiplication = document.getElementById("operator-multiplication")
 const division       = document.getElementById("operator-division")
 
-numberZero.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "0") {
-        event.textContent += 0;
-    }
+// Create an empty array to store numbers and operators for calculations
+let calculationArray = [];
 
-    divDisplay = event;
+numberZero.addEventListener("click", function(event) {
+    divDisplay.textContent += "0";
+    calculationArray.push("0");
 })
 
 numberDot.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== ".") {
-        event.textContent += ".";
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += ".";
+    calculationArray.push(".");
 })
 
 displayClear.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "") {
-        event.textContent = "";
-    }
-
-    divDisplay = event;
+    divDisplay.textContent = "";
+    calculationArray = [];
 })
 
 numberOne.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "1") {
-        event.textContent += 1;
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "1";
+    calculationArray.push("1");
 })
 
 numberTwo.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "2") {
-        event.textContent += 2;
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "2";
+    calculationArray.push("2");
 })
 
 numberThree.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "3") {
-        event.textContent += 3;
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "3";
+    calculationArray.push("3");
 })
 
 numberFour.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "4") {
-        event.textContent += 4;
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "4";
+    calculationArray.push("4");
 })
 
 numberFive.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "5") {
-        event.textContent += 5;
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "5";
+    calculationArray.push("5");
 })
 
 numberSix.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "6") {
-        event.textContent += 6;
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "6";
+    calculationArray.push("6");
 })
 
 numberSeven.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "7") {
-        event.textContent += 7;
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "7";
+    calculationArray.push("7");
 })
 
 numberEight.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "8") {
-        event.textContent += 8;
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "8";
+    calculationArray.push("8");
 })
 
 numberNine.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "9") {
-        event.textContent += 9;
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "9";
+    calculationArray.push("9");
 })
 
 addition.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "+") {
-        event.textContent += "+";
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "+";
+    calculationArray.push("+");
 })
 
 subtraction.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "-") {
-        event.textContent += "-";
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "-";
+    calculationArray.push("-");
 })
 
 multiplication.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "*") {
-        event.textContent += "*";
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "*";
+    calculationArray.push("*");
 })
 
 division.addEventListener("click", function(event) {
-    event = divDisplay
-    if (event !== "/") {
-        event.textContent += "/";
-    }
-
-    divDisplay = event;
+    divDisplay.textContent += "/";
+    calculationArray.push("/");
 })
