@@ -153,6 +153,8 @@ let keyMap = {
     "Delete": "clear",
 }
 
+
+// Create an event listener for easier number input
 document.addEventListener('keydown', function(event) {
     let action = keyMap[event.key];
 
