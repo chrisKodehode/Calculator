@@ -125,49 +125,31 @@ division.addEventListener("click", function(event) {
 })
 
 // Declare and assign keycodes to corresponding actions
-let keyCodeMap = {
-    // Normal keyboard numbers | "48" to "57" maps to the numbers "0" to "9"
-    48: "0",
-    49: "1",
-    50: "2",
-    51: "3",
-    52: "4",
-    53: "5",
-    54: "6",
-    55: "7",
-    56: "8",
-    57: "9",
+let keyMap = {
+    // Normal keyboard numbers and Numpad Numbers
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
 
-    // Numpad Numbers | "96" to "105" maps to the numbers "0" to "9"
-    96: "0",
-    97: "1",
-    98: "2",
-    99: "3",
-    100: "4",
-    101: "5",
-    102: "6",
-    103: "7",
-    104: "8",
-    105: "9",
+    // Numpad and Operators (Standard keyboard)
+    "*": "*",
+    "+": "+",
+    "-": "-",
+    ".": ".",
+    "/": "/",
+
+    // "=" and "Enter"
+    "=": "=",
+    "Enter": "=",
     
-    // Numpad
-    // "106" maps to "*",
-    106: "*",
-    // "107" maps to "+"
-    107: "+",
-    // "109" maps to "-"
-    109: "-",
-    // "110" maps to "."
-    110: ".",
-    // "111" maps to "/"
-    111: "/",
-    
-    // "13" maps to "="
-    13: "=",
-    // "8" maps to "clear"
-    8: "clear",
-    // "46" maps to "clear"
-    46: "clear",
-    // "190" maps to "."
-    190: ".",
+    // "Backspace" and "Delete" maps to "clear"
+    "Backspace": "clear",
+    "Delete": "clear",
 }
