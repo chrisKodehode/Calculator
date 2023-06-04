@@ -1,6 +1,5 @@
 /*
     TODO:
-    * Keydown event for all numbers and operators for easier input 
     ! 27-28 max characters in display box
     ! 1 max character in display box for decimal, equals & operators
 */
@@ -148,8 +147,45 @@ let keyMap = {
     // "=" and "Enter"
     "=": "=",
     "Enter": "=",
-    
+
     // "Backspace" and "Delete" maps to "clear"
-    "Backspace": "clear",
+    "Backspace": "backspace",
     "Delete": "clear",
 }
+
+document.addEventListener('keydown', function(event) {
+    let action = keyMap[event.key];
+
+    // If the key pressed is a mapped key
+    if (action) {
+
+        // If the action is a number and display has less than 28 characters
+        if (!isNaN(action) && divDisplay.textContent.length < 28) {
+            divDisplay.textContent += action;
+            calculationArray.push(action);
+        } 
+
+        // If action is not a number and the last character is not an operator
+        else if (isNaN(action) && !isNaN(divDisplay.textContent.slice(-1)) && divDisplay.textContent.length < 28) {
+            if (action === "=") {
+                let calculationString = calculationArray.join('');
+                let result = eval(calculationString);
+                divDisplay.textContent = result;
+                calculationArray = [result];
+            } else if (action === "backspace") {
+                // remove last character from display and calculation array
+                divDisplay.textContent = divDisplay.textContent.slice(0, -1);
+                calculationArray.pop();
+            } else if (action !== "clear") {
+                divDisplay.textContent += action;
+                calculationArray.push(action);
+            }
+        }
+
+        // If the action is "clear"
+        else if (action === "clear") {
+            divDisplay.textContent = "";
+            calculationArray = [];
+        }
+    }
+});
